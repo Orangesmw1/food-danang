@@ -420,12 +420,12 @@ header {
   }
 
   .carousel-title h1 {
-    font-size: 2.8rem;
+    font-size: 2.3rem;
   }
 
   .carousel-title h5 {
     margin-top: 0;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .img-carousel-clone img {
@@ -439,6 +439,7 @@ header {
     align-items: center;
 
     height: 250px;
+    width: 290px;
     padding: 30px 0;
   }
 
@@ -454,6 +455,11 @@ header {
   .img-carousel-clone-title button {
     font-size: 0.55rem;
     width: 100px;
+    padding: 9px 0px;
+  }
+
+  .img-carousel-clone-title button:hover {
+    padding: 11px 2px;
   }
 
   .img-carousel-clone-title i {
@@ -642,11 +648,15 @@ header {
 @media (max-width: 490px) {
   .blogs-float {
     margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .float-content {
     padding: 0;
     overflow: hidden;
-    width: 490px;
 
     display: flex;
     flex-direction: column;
@@ -654,15 +664,15 @@ header {
 
   .float-content-clone {
     margin-top: 0;
-    width: 490px;
+    width: 390px;
     height: 200px;
 
     position: relative;
   }
 
   .clone-img {
-    width: 350px;
-    height: 200px;
+    width: 250px;
+    height: 150px;
     border: 5px double #f2d338;
 
     position: absolute;
@@ -691,12 +701,12 @@ header {
 
   .clone-title-float {
     width: 0;
-    height: 190px;
+    height: 50px;
     background-color: rgba(0, 0, 0, 0.5);
 
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 
     position: absolute;
@@ -710,7 +720,8 @@ header {
 
   .float-content-clone:hover .clone-title-float {
     opacity: 1;
-    width: 340px;
+    width: 240px;
+    height: 140px;
   }
 
   .clone-title-float h4 span {
@@ -727,7 +738,8 @@ header {
   }
 
   .clone-title-float h2 {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
+    padding: 0 10px;
     color: #fff;
     /* opacity: 0; */
   }
@@ -745,8 +757,8 @@ header {
     content: "Read More";
     background-color: #f2d338;
     font-size: 0.8rem;
-    padding: 5px 10px;
-    margin-bottom: 20px;
+    padding: 2px 5px;
+    margin-bottom: 10px;
     /* opacity: 0; */
     transition: all linear 1s;
   }
@@ -1018,7 +1030,7 @@ header {
   margin-top: 50px;
   overflow: hidden;
   width: 400px;
-  padding: 20px 10px;
+  /* padding: 20px 10px; */
 }
 
 .related-clone-img img {
@@ -1099,21 +1111,28 @@ header {
 /* For Mobile  */
 @media (max-width: 490px) {
   .related-post {
-    margin: 0;
+    margin: 0 20px;
     background-color: #fff;
-    padding: 20px;
+    padding: 10px;
     margin-bottom: 50px;
+    height: 185px;
   }
 
   .related-title {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+    margin-bottom: 5px;
   }
 
-  .related-clone {
+  * .related-clone {
+    width: 71px !important;
+    height: 175px;
   }
 
   .related-clone-img {
-    width: 110px;
+    width: 70px;
+    margin-top: 0;
+    margin-left: 0;
+
     padding-bottom: 0;
   }
 
@@ -1122,12 +1141,16 @@ header {
     width: 100%;
   }
 
+  .related-content .slick-track {
+    top: -30px;
+  }
+
   .related-content .slick-prev {
-    top: 121px;
+    top: 41px;
   }
 
   .related-content .slick-next {
-    top: 121px;
+    top: 41px;
   }
 
   .related-clone-title {
@@ -1138,7 +1161,6 @@ header {
 
   .related-clone-title h6 {
     font-size: 0.5rem;
-    padding-right: 10px;
   }
 
   .related-clone-title h5 {
@@ -1336,8 +1358,7 @@ header {
 
   .contact-quick {
     flex: 2;
-    margin-right: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 55px;
   }
 
   .contact-quick h1 {
@@ -1352,7 +1373,7 @@ header {
     flex: 3;
     margin-bottom: 30px;
     /* padding: 0 30px; */
-    margin-right: 40px;
+    margin-right: 17px;
     /* margin-left: 20px; */
   }
 
@@ -1389,11 +1410,11 @@ header {
 
   .contact-socical {
     flex: 5;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
   .contact-socical h1 {
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
 
   .contact-socical .socical-items {
@@ -1407,9 +1428,12 @@ header {
   .contact-socical button {
     font-size: 0.6rem;
     padding: 5px 3px;
+    width: 100px;
   }
 
   .contact-socical button:hover {
-    font-size: 0.8rem;
+    width: 100px;
+    font-size: 0.6rem;
+    padding: 5px 3px;
   }
 }
