@@ -123,7 +123,6 @@ header {
   header {
     height: 50px;
     padding: 0 10px;
-    width: 740px;
   }
 
   .header-task {
@@ -211,7 +210,6 @@ header {
 /* carousel  */
 
 .carousel {
-  height: 850px;
   margin: 0 100px;
   background-color: #fff;
 }
@@ -343,7 +341,6 @@ header {
 /* For Tablet  */
 @media (min-width: 491px) and (max-width: 740px) {
   .carousel {
-    height: 550px;
     margin: 0 50px;
   }
 
@@ -353,19 +350,20 @@ header {
 
   .carousel-title h5 {
     margin-top: -10px;
+    font-size: 0.9rem;
   }
 
   .carousel-content-img {
     margin-top: -20px;
     background-color: whitesmoke;
-    height: 400px;
+    height: 300px;
   }
 
   .img-carousel-clone {
   }
 
   .img-carousel-clone img {
-    height: 400px;
+    height: 300px;
   }
 
   .img-carousel-clone-title {
@@ -599,12 +597,16 @@ header {
   }
 
   .float-content-clone {
-    width: 250px;
+    width: 40%;
   }
 
   .clone-img {
-    width: 250px;
+    width: 100%;
     height: 250px;
+  }
+
+  .clone-img img {
+    width: 100%;
   }
 
   .float-content-clone h4 span {
@@ -640,7 +642,8 @@ header {
   }
 
   .float-button span {
-    padding: 3px 10px;
+    padding: 2px 8px;
+    font-size: 0.9rem;
   }
 }
 
@@ -1016,20 +1019,31 @@ header {
   text-align: center;
   margin-bottom: -50px;
   font-size: 1.3rem;
+  height: 70px;
 }
 
 .related-content {
   width: 100%;
 }
 
+.related-content .slick-prev {
+  left: -0.3%;
+}
+
+.related-content .slick-next {
+  right: -0.3%;
+}
+
 .related-clone {
-  width: 400px;
 }
 
 .related-clone-img {
   margin-top: 50px;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
-  width: 400px;
+  padding: 20px;
+  /* width: 400px; */
   /* padding: 20px 10px; */
 }
 
@@ -1072,25 +1086,28 @@ header {
 
   .related-title {
     font-size: 1rem;
+    height: 50px;
   }
 
   .related-clone {
   }
 
   .related-clone-img {
-    width: 210px;
+    /* width: 210px; */
+    padding: 5px;
   }
 
   .related-clone-img img {
     height: 150px;
+    padding: 0;
   }
 
   .related-content .slick-prev {
-    top: 147px;
+    top: 45%;
   }
 
   .related-content .slick-next {
-    top: 147px;
+    top: 45%;
   }
 
   .related-clone-title {
@@ -1120,29 +1137,31 @@ header {
 
   .related-title {
     font-size: 0.7rem;
-    margin-bottom: 5px;
   }
 
   * .related-clone {
-    width: 71px !important;
-    height: 175px;
+    height: 100px;
   }
 
   .related-clone-img {
-    width: 70px;
+    width: 100%;
     margin-top: 0;
     margin-left: 0;
 
     padding-bottom: 0;
+    padding: 0;
   }
 
   .related-clone-img img {
     height: 100px;
     width: 100%;
+    padding: 5px;
   }
-
+  .related-content .slick-list {
+    margin-top: 15px;
+  }
   .related-content .slick-track {
-    top: -30px;
+    top: -15px;
   }
 
   .related-content .slick-prev {
@@ -1231,7 +1250,6 @@ header {
 }
 
 .contact-locations form {
-  width: 400px;
 }
 
 .contact-locations form input {
@@ -1294,27 +1312,26 @@ header {
   }
 
   .contact-quick h1 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
   .contact-quick ul li {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .contact-locations {
-    flex: 6;
+    flex: 5;
   }
 
   .contact-locations h1 {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
 
   .contact-locations form {
-    width: 300px;
   }
 
   .contact-locations form input {
-    width: 250px;
+    width: 70%;
   }
 
   .contact-locations form i {
@@ -1322,21 +1339,36 @@ header {
   }
 
   .contact-locations p {
-    font-size: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .contact-locations p br {
+    display: none;
   }
 
   .contact-socical {
-    flex: 2;
+    flex: 3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    margin-left: 20px;
   }
 
   .contact-socical h1 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .contact-socical .socical-items {
     font-size: 1rem;
     margin-bottom: 20px;
     margin-top: 20px;
+    text-align: center;
+  }
+
+  .socical-items i {
   }
 
   .contact-socical button {
